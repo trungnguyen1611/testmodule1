@@ -1,10 +1,6 @@
-table tr,th,td{
+table tr,td{
     border: 1px solid black;
-    text-align: center;
 }
-.list-book{
+table{
     border-collapse: collapse;
-    position: fixed;
-    left: 40%
-
 }

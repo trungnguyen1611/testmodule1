@@ -2,45 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bai3</title>
+    <title>Bài 3</title>
     <link rel="stylesheet" href="bai3.css">
+
 
 </head>
 <body>
-<input type="text" id="code" placeholder="Nhap ma so sach"><br>
-<input type="text" id="name" placeholder="Nhap ten sach"><br>
-<input type="text" id="year" placeholder="Nhap nam xuat ban sach"><br>
-<input type="text" id="quantity" placeholder="Nhap so luong sach"><br>
-<table class="list-book">
+<h4>Quản lý Sách</h4>
+<h3>Nhập các thông tin</h3>
+<table class="table">
+    <tr>
+        <td>Booknumber</td>
+        <td><input type="text" placeholder="Mã số sách" id="booknumber"></td>
+    </tr>
+    <tr>
+        <td>Namenumber</td>
+        <td><input type="text" placeholder="Tên sách" id="namenumber"></td>
+    </tr>
+    <tr>
+        <td>YearBook</td>
+        <td><input type="text" placeholder="Năm xuất bản" id="yearBook"></td>
+    </tr>
+    <tr>
+        <td>Number</td>
+        <td><input type="text" placeholder="Số Quyển" id="number"></td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td><input type="text" placeholder="Tình trạng" id="status"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button onclick="save()">Thêm sách đã có</button>
+        </td>
+    </tr>
+</table>
+<table class="table - bot">
     <thead>
     <tr>
-        <th>Mã số sách</th>
-        <th>Tên sách</th>
-        <th>Năm xuất bản</th>
-        <th>Số quyển</th>
-        <th>Tình trạng</th>
+        <th>Mã số sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số Quyển</th>
+        <th>Tình Trạng</th>
     </tr>
     </thead>
-    <tbody  id="list-book">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+
+    <tbody id="list">
+
     </tbody>
 </table>
-<button id="add-old">Them sach cu</button>
-<br>
-<button id="add-new" onclick="save()">Them sach moi</button>
-<br>
-<button id="borrow">Muon sach</button>
-<br>
-<button id="display-most">Hien thi sach muon nhieu nhat</button>
-
-<script src="Book.js"></script>
-<script src="BookManager.js"></script>
-<script src="main.js"></script>
+<script src="ManagerBook.js"></script>
 </body>
 </html>
