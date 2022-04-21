@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+    <link rel="stylesheet" href="bai3.css">
+
+</head>
+<body>
+<input type="text" id="code" placeholder="Nhap ma so sach"><br>
+<input type="text" id="name" placeholder="Nhap ten sach"><br>
+<input type="text" id="year" placeholder="Nhap nam xuat ban sach"><br>
+<input type="text" id="quantity" placeholder="Nhap so luong sach"><br>
+<table class="list-book">
+    <thead>
+    <tr>
+        <th>Mã số sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số quyển</th>
+        <th>Tình trạng</th>
+    </tr>
+    </thead>
+    <tbody  id="list-book">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+<button id="add-old">Them sach cu</button>
+<br>
+<button id="add-new" onclick="save()">Them sach moi</button>
+<br>
+<button id="borrow">Muon sach</button>
+<br>
+<button id="display-most">Hien thi sach muon nhieu nhat</button>
+
+<script src="Book.js"></script>
+<script src="BookManager.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

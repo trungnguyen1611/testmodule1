@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 6, 7, 8, 9, 12, 21, 41, 13, 24, 22, 66, 32, 33, 44, 35, 36];
+
+    function medium(arr) {
+        let sum = 0;
+        let a=[];
+        if (arr.length <= 50) {
+            for (let i = 0; i < arr.length; i++) {
+                if (i%2==0){
+                    if (arr[i] % 2 !== 0) {
+                        a.push(i);
+                        sum += arr[i] / a.length;
+                    }
+                }
+            }
+            return sum;
+        }
+        else{
+            return 'so phan tu trong mang lon hon 50';
+        }
+    }
+
+    alert(medium(arr));
+</script>
+</body>
+</html>

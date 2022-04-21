@@ -1,0 +1,10 @@
+table tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+.list-book{
+    border-collapse: collapse;
+    position: fixed;
+    left: 40%
+
+}
